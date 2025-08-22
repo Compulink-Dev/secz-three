@@ -57,7 +57,13 @@ export default function Header() {
               <NavigationMenuList>
                 {/* About Menu */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
+                  <NavigationMenuTrigger
+                    className={
+                      isScrolled
+                        ? "bg-transparent text-amber-950"
+                        : "bg-transparent text-white"
+                    }
+                  >
                     About
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -94,7 +100,13 @@ export default function Header() {
 
                 {/* Services Menu */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
+                  <NavigationMenuTrigger
+                    className={
+                      isScrolled
+                        ? "bg-transparent text-amber-950"
+                        : "bg-transparent text-white"
+                    }
+                  >
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
@@ -117,17 +129,41 @@ export default function Header() {
 
                 {/* Simple Links */}
                 <NavigationMenuItem>
-                  <Button variant="ghost" asChild>
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className={
+                      isScrolled
+                        ? "bg-transparent text-amber-950"
+                        : "bg-transparent text-white"
+                    }
+                  >
                     <a href="#">Markets</a>
                   </Button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Button variant="ghost" asChild>
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className={
+                      isScrolled
+                        ? "bg-transparent text-amber-950"
+                        : "bg-transparent text-white"
+                    }
+                  >
                     <a href="#">Publications</a>
                   </Button>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                  <Button variant="ghost" asChild>
+                  <Button
+                    variant="ghost"
+                    asChild
+                    className={
+                      isScrolled
+                        ? "bg-transparent text-amber-950"
+                        : "bg-transparent text-white"
+                    }
+                  >
                     <a href="/contact">Contact</a>
                   </Button>
                 </NavigationMenuItem>
